@@ -169,6 +169,14 @@ input type:touchpad {
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
+
+	# Screenshot a window
+	bindsym $mod+Print exec sway-screenshot -m window
+	# Screenshot a monitor
+	bindsym Print exec sway-screenshot -m output
+	# Screenshot a region
+	bindsym $mod+Shift+Print exec sway-screenshot -m region
+
 #
 # Scratchpad:
 #
